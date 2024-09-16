@@ -1,0 +1,168 @@
+/* General styles for dark mode */
+body {
+  background-color: #1E1E1E; /* Dark background */
+  color: #F5F5F5; /* Light text */
+}
+
+section {
+  background-color: #2C2C2C;
+  color: #F5F5F5;
+}
+
+header {
+  background: linear-gradient(to right, #141E30, #243B55);
+  color: #F5F5F5;
+}
+
+header nav ul li a {
+  color: #F5F5F5;
+}
+
+header nav ul li a:hover {
+  color: #ADD8E6; /* Light blue on hover */
+  border-color: #ADD8E6;
+}
+
+h2:after {
+  background: linear-gradient(to right, #2E9CCA, #464866);
+}
+
+button.dark-mode-btn {
+  background-color: #464866;
+  color: #F5F5F5;
+}
+
+button.dark-mode-btn:hover {
+  background-color: #2E9CCA;
+}
+
+/* About Me Section */
+#about-me-section {
+  background-color: #2C2C2C;
+  border-color: #555;
+}
+
+#about-me-section h2 {
+  color: #F5F5F5;
+}
+
+.text-content p {
+  color: #D1D1D1;
+}
+
+/* Skills Section */
+#skills {
+  background-color: #2C2C2C;
+  border-color: #555;
+}
+
+#skills h2 {
+  color: #F5F5F5;
+}
+
+.skills-container ul li {
+  color: #D1D1D1;
+}
+
+.skills-container ul li:before {
+  color: #ADD8E6;
+}
+
+/* Projects Section */
+#projects {
+  background-color: #2C2C2C;
+}
+
+.project {
+  background-color: #333;
+  border-color: #555;
+}
+
+.project h3,
+.project p {
+  color: #D1D1D1;
+}
+
+.project img {
+  border-color: #555;
+}
+
+/* Resume Section */
+#resume {
+  background-color: #2C2C2C;
+}
+
+.resume {
+  background-color: #333;
+  border-color: #555;
+}
+
+.pdf-preview iframe {
+  border-color: #555;
+}
+
+.pdf-preview a {
+  color: #ADD8E6;
+}
+
+.pdf-preview a:hover {
+  color: #F5F5F5;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #2C2C2C;
+}
+
+form {
+  background-color: #333;
+  border-color: #555;
+}
+
+label {
+  color: #D1D1D1;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  background-color: #2C2C2C;
+  color: #F5F5F5;
+  border-color: #555;
+}
+
+input[type="submit"] {
+  background-color: #464866;
+  color: white;
+}
+
+input[type="submit"]:hover {
+  background-color: #2E9CCA;
+}
+
+/* Hamburger Menu */
+header nav ul {
+  background-color: #2C2C2C;
+}
+
+/* Footer Section */
+footer {
+  background-color: #141E30;
+}
+
+footer ul li a {
+  color: #F5F5F5;
+}
+
+footer ul li a:hover {
+  color: #ADD8E6;
+}
+
+.social-media {
+  border-top-color: #555;
+}
+
+.copyright {
+  color: #D1D1D1;
+}

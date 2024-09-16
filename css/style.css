@@ -1,0 +1,659 @@
+/* General styles with new color scheme */
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, serif;
+  background-color: #F5F5F5; /*  Light background */
+  margin: 0;
+  padding: 0;
+}
+section {
+  padding: 20px;
+}
+
+html, body {
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  margin: 0;
+  padding: 0;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box; /* Ensures padding and borders don't affect width calculations */
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #25274D, #29648A);
+  padding: 1em;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+header h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1em;
+}
+
+header nav ul li a {
+  display: block;
+  padding: 0.5em 1em;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+header nav ul li a:hover {
+  transform: scale(1.05);
+  border-radius: 50px;
+  color: #2E9CCA; /* Bright cyan on hover */
+  border-color: #2E9CCA; /* Matching border color */
+}
+
+
+
+/* Section heading with :after pseudo-class gradient */
+h2:after {
+  content: '';
+  display: block;
+  width: 100px; /* Set the width of the gradient */
+  height: 3px;
+  background: linear-gradient(to right, #464866, #2E9CCA); /* 2-color gradient */
+  margin-top: 0.5em;
+  margin-left: auto;
+  margin-right: auto; /* Center the gradient */
+}
+
+
+button.dark-mode-btn {
+  background-color: #4A90E2; /* New button color */
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.dark-mode-btn:hover {
+  background-color: #2E9CCA; /* Change color on hover */
+
+}
+
+/* Footer styling */
+footer {
+  background: linear-gradient(to right, #25274D, #29648A);
+  padding: 1em;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hamburger Menu */
+.hamburger-icon {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+  z-index: 3;
+}
+
+
+
+/*--------------------------About Me Section Styling -----------------------*/
+/* About Me Section */
+#about-me-section {
+  max-width: 1200px;
+  margin: 40px auto 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Text content styling */
+.text-content {
+  flex: 1;
+  padding: 10px;
+}
+
+#about-me-section h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: black;
+  text-align: center;
+}
+
+.text-content p {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Image content styling */
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  #about-me-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-content {
+    padding: 15px;
+  }
+
+  .image-content {
+    margin-top: 20px;
+  }
+
+  #about-me-section h2 {
+    font-size: 1.8em;
+  }
+
+  .text-content p {
+    font-size: 1.1em;
+  }
+}
+/*--------------------------Skills Styling -----------------------*/
+/* Skills Section */
+#skills {
+  max-width: 1200px;
+  margin: 40px auto 0 auto; /* Adds space between the header and container */
+  padding: 20px;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section title styling */
+#skills h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: black;
+  text-align: center;
+}
+
+/* Skills container styling */
+.skills-container {
+  padding: 20px;
+}
+
+/* List styling */
+.skills-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-container ul li {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  padding-left: 30px; /* Increased padding to make room for larger bullet */
+  position: relative;
+  color: #333;
+  line-height: 1.6; /* Adjusts line height to match dot size */
+}
+
+/* Add a custom bullet point */
+.skills-container ul li:before {
+  content: "•";
+  color: #2E9CCA;
+  font-size: 1.5em;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%); /* Vertically centers the dot with the text */
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  #skills {
+    margin: 20px auto 0 auto;
+    padding: 15px;
+  }
+
+  #skills h2 {
+    font-size: 1.8em;
+  }
+
+  .skills-container ul li {
+    font-size: 1.1em;
+  }
+}
+
+
+
+
+/*--------------------------Projects Section Styling -----------------------*/
+#projects {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+#projects h2 {
+  margin-bottom: 40px;
+  font-size: 2em;
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+/* Each project container */
+.project {
+  flex: 1 1 calc(30% - 20px); /* Each project takes ~30% width minus the gap */
+  margin: 15px;
+  padding: 20px;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#projects .project img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+#projects .project h3 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+#projects .project p {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #0073b1;
+  font-weight: bold;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    flex: 1 1 100%; /* Take full width in mobile view */
+    margin: 10px 0;
+  }
+}
+
+/*--------------------------Resume Section Styling -----------------------*/
+/* Resume Section Styling */
+#resume {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+#resume h2 {
+  margin-bottom: 40px;
+  font-size: 2em;
+}
+
+/* Container for resume and PDF preview */
+.resume-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Resume text section */
+.resume {
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* PDF preview section */
+.pdf-preview {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pdf-preview iframe {
+  width: 100%;
+  height: 500px;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Download link */
+.pdf-preview a {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #2E9CCA;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.pdf-preview a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .resume-container {
+    flex-direction: column;
+  }
+
+  .pdf-preview {
+    width: 100%;
+  }
+
+  .pdf-preview iframe {
+    height: 300px;
+  }
+}
+
+
+
+
+/*-------------------------Contact Form Styling--------------------------*/
+/* Contact section styling */
+#contact {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+#contact h2 {
+  margin-bottom: 40px;
+  font-size: 2em;
+}
+
+form {
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+  color: #464866;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 150px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #2E9CCA;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #2A82B1;
+}
+
+/* Mobile responsive styling */
+@media (max-width: 768px) {
+  form {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  #contact h2 {
+    font-size: 1.8em;
+  }
+
+  label {
+    font-size: 1em;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    font-size: 1em;
+  }
+
+  input[type="submit"] {
+    font-size: 1.1em;
+  }
+}
+
+
+
+/*--------------------------Hamburger Menu Styling -----------------------*/
+/* Hamburger Menu Styles */
+.hamburger-icon {
+  display: none; /* Hidden by default on desktop */
+  font-size: 2em;
+  cursor: pointer;
+  z-index: 1000; /* Ensure it's on top of the content */
+  margin-left: auto; /* Keep it aligned to the right */
+}
+
+#hamburger-checkbox {
+  display: none; /* Hide the actual checkbox */
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav ul {
+    display: none; /* Hide nav by default */
+    flex-direction: column;
+    background-color: #25274D;
+    width: 100%;
+    padding: 0;
+    position: absolute;
+    top: 60px; /* Keep menu below header */
+    left: 0;
+    z-index: 999;
+  }
+
+  header nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul li a {
+    width: 100%;
+    padding: 1em 0;
+    box-sizing: border-box;
+  }
+
+  /* Show hamburger icon on mobile */
+  .hamburger-icon {
+    display: block;
+    color: white;
+  }
+
+  .hamburger-icon:hover {
+    color: #ADD8E6; /* Optional: Change color on hover */
+  }
+
+  /* When the checkbox is checked, show the menu */
+  #hamburger-checkbox:checked + label + ul {
+    display: flex;
+  }
+
+  /* Dark Mode Button placement for mobile */
+  button.dark-mode-btn {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+}
+
+
+
+/*--------------------------Footer Section Styling -----------------------*/
+footer {
+  background-color: #2E9CCA;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ADD8E6;
+}
+
+.social-media {
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  footer ul {
+    display: block;
+    text-align: left;
+  }
+
+  footer ul li {
+    display: block;
+    margin: 10px 0;
+    position: relative;
+    padding-left: 20px;
+  }
+
+  footer ul li:before {
+    content: ">";
+    color: white;
+    position: relative;
+    left: 0;
+    font-size: 1.5em;
+    line-height: 1;
+  }
+
+  .social-media {
+    margin-top: 20px;
+    border-top: 2px solid white;
+    padding-top: 15px;
+  }
+}
+
+
+
+

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donovan Murphy's Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dark-mode.css" id="dark-mode-style" disabled>
+  <meta name="description" content="Portfolio website for Donovan Murphy, showcasing skills, projects, and contact information.">
+
+  <link rel="icon" href="/stock-market.png" sizes="any">
+  <link rel="icon" href="/stock-market.png" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+  <meta name="theme-color" content="#fafafa">
+</head>
+<body>
+<header>
+  <h1><strong>Donovan Murphy</strong></h1>
+  <nav>
+    <input type="checkbox" id="hamburger-checkbox">
+    <label for="hamburger-checkbox" class="hamburger-icon">☰</label>
+    <ul id="main-nav">
+      <li><a href="#about-me-section">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </nav>
+  <button onclick="toggleDarkMode()" class="dark-mode-btn">Toggle Dark Mode</button> <!-- Dark mode toggle button -->
+</header>
+
+<section id="about-me-section">
+  <div class="text-content">
+    <h2>About Me</h2>
+    <p>I am Donovan Murphy, a senior at the Florida Institute of Technology, pursuing a Bachelor’s Degree in Computer Science with a passion for technology and finance. My academic journey and hands-on experience have equipped me with a strong foundation in software development, high-performance computing (HPC), and simulation technologies.</p>
+
+    <p>As a Software Engineer Intern at Northrop Grumman, I contributed to complex projects, including HPC management and cutting-edge simulation technologies. This experience sharpened my problem-solving skills and taught me the value of working in collaborative environments, particularly in the defense sector.</p>
+
+    <p>Outside of my technical expertise, I am also a college athlete, playing for the men’s basketball team. This experience has taught me the importance of teamwork, discipline, and dedication—qualities I carry into my professional pursuits.</p>
+
+    <p>As I near graduation, I am eager to apply my technical skills and collaborative mindset to impactful projects, especially in fields where technology intersects with finance and innovation. I am actively seeking full-time opportunities that allow me to grow as a software engineer while contributing to dynamic teams in the financial or defense industries.</p>
+  </div>
+
+  <div class="image-content">
+    <img src="about-me-image.jpg" alt="Donovan Murphy About Me Image" />
+  </div>
+</section>
+
+
+
+<section id="skills">
+  <h2>Marketable Skills and Abilities</h2>
+  <div class="skills-container">
+    <ul>
+      <li><strong>Programming Languages:</strong> C++, Python, Java, Blueprint</li>
+      <li><strong>Technology Skills:</strong> High-Performance Computing, Containers, Hypervisors, Infiniband</li>
+      <li><strong>Operating Systems:</strong> Linux, Windows, RedHat</li>
+      <li><strong>Tools:</strong> JIRA, Confluence, Docker, Git, Github</li>
+      <li><strong>Experience with:</strong> Unreal Engine Development, VR Headsets, Simulated Environments, Wireshark</li>
+    </ul>
+  </div>
+</section>
+
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="project-container">
+    <div class="project project1">
+      <h3>High Performance Comp<br> and<br> Image Generation</h3>
+      <img src="global-hawk.jpg" alt="Project 1 Image">
+      <p>DI contributed to setting up an HPC cluster, enhancing computational capabilities and gaining hands-on experience in infrastructure optimization. Simultaneously, I worked on generating real-time visualizations using Unreal Engine, processing data to simulate dynamic environments...</p>
+    </div>
+
+    <div class="project project2">
+      <h3>RealEase: <br>Comprehensive Real Estate Insights Platform</h3>
+      <video width="320" height="240" autoplay muted loop>
+        <source src="RealEase-media.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p>A web application designed to empower real estate buyers and renters with in-depth insights into neighborhoods. It analyzes online reviews, social media posts, and local news articles to generate a comprehensive sentiment score for different areas. By harnessing advanced sentiment analysis technology, RealEase helps users understand the community vibe and make more informed decisions about where to live...</p>
+      <a href="http://www.linkedin.com/in/donovan-murphy-426274259" target="_blank">LinkedIn Profile</a>
+    </div>
+
+    <div class="project project3">
+      <h3>Expense Manager <br>and<br> Reporting System</h3>
+      <img src="expense.png" alt="Expense Manager Screenshot">
+      <p>I led the development of an expense manager system that uses web data extraction to generate user-friendly graphical reports...</p>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section id="resume">
+  <h2>Resume</h2>
+  <div class="resume-container">
+    <div class="resume">
+      <h3>Education</h3>
+      <p>Computer Science B.S., Florida Institute of Technology, May 2025</p>
+
+      <h3>Work Experience</h3>
+      <p>Software Engineer Intern at Northrop Grumman, May 2024 – Present</p>
+      <p>High-Performance Computing and simulation technology experience</p>
+
+      <h3>Extracurricular Activities</h3>
+      <p>College Men's Basketball Player</p>
+      <p>Distinguished Scholar Award</p>
+      <p>Dean’s List: 2021, 2022, 2023, 2024</p>
+    </div>
+
+    <!-- PDF Preview Section -->
+    <div class="pdf-preview">
+      <iframe src="Donovan_Murphy_Resume.pdf" width="100%" height="500px"></iframe>
+      <a href="Donovan_Murphy_Resume.pdf" download>Download Resume</a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone">
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+    </div>
+
+    <input type="submit" value="Submit">
+  </form>
+</section>
+
+
+
+<footer>
+  <div class="main-footer">
+    <ul>
+      <li><a href="#about-me-section">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </div>
+
+  <div class="social-media">
+    <ul>
+      <li><a href="http://www.linkedin.com/in/donovan-murphy-426274259">LinkedIn</a></li>
+      <li><a href="mailto:Vanmurphy50@outlook.com">Email</a></li>
+    </ul>
+  </div>
+  <div class="copyright">
+    &copy; 2024 - Donovan Murphy. All rights reserved.
+  </div>
+</footer>
+
+
+<script>
+  function toggleDarkMode() {
+    const darkModeStylesheet = document.getElementById('dark-mode-style');
+    darkModeStylesheet.disabled = !darkModeStylesheet.disabled;
+    document.getElementById('hamburger-checkbox').checked = false; /* Close the menu on toggle */
+  }
+</script>
+
+</body>
+</html>
